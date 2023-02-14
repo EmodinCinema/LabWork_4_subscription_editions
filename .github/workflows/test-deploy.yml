@@ -52,7 +52,7 @@ jobs:
             IdentityFile ~/.ssh/id_rsa 
             StrictHostKeyChecking no 
           END 
-      - run: cat .ssh/config
+      - run: cat ~/.ssh/config
         # Создаем файл .env, который необходим для docker-compose 
       - name: Create .env file 
         run: | 
