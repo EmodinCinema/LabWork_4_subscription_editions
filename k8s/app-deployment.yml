@@ -16,7 +16,7 @@ spec:                     # Описываем характеристики depl
     spec:
       containers:         # Описываем контейнер
       - name: labwork-4-subscription-editions
-        image: emodincinema/labwork-4-subscription-editions:latest
+        image: emodincinema/labwork-4-subscription-editions:1.0
         ports:
         - containerPort: 8000
         env:              # Задаем переменные окружения

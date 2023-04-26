@@ -141,6 +141,9 @@ def read_editions(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
     subscriptions = crud.get_subscriptions(db, skip=skip, limit=limit)
     return subscriptions
 
+@app.get("/version")
+def get_app_version():
+    return {'version': 2.0}
 
 #if __name__ == "__main__":
 #    uvicorn.run("main:app", port=6000, log_level="info", reload=True)
